@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="circle.h" />
+    <ClInclude Include="copyable_concept.h" />
     <ClInclude Include="drawable_area_concept.h" />
     <ClInclude Include="drawable_area_document.h" />
     <ClInclude Include="drawable_area_object.h" />

@@ -1,9 +1,10 @@
 #ifndef __DRAWABLE_CONCEPT_H
 #define __DRAWABLE_CONCEPT_H
 
-struct drawable_concept_t {
+#include "copyable_concept.h"
+
+struct drawable_concept_t : public copyable_concept_t<drawable_concept_t> {
 	virtual ~drawable_concept_t() {};
-    virtual drawable_concept_t* copy_() = 0;
     virtual void draw_(std::ostream&, size_t) const = 0;
 };
 
